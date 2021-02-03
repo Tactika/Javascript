@@ -13,8 +13,10 @@
                 Please enter your number grade (0-100) and we will calculate the Letter Grade!
             </p>
         </div>
-        <input type="text" name="grade" id="grade_input">
-        <button type="submit">Grade</button>
+        <form method="post" id="gradeForm" action="grading.html">
+        <input type="text" name="grade" placeholder="Number Grade" id="grade_input">
+        <input type="submit" value="Grade Me">
+        </form>
         <div>
             <h2>Your Letter Grade Is</h2>
             <span id="letter_grade"></span>
